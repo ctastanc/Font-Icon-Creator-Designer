@@ -1,0 +1,13 @@
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\bin\Debug\FontIconCreatorDesigner.exe.config
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\bin\Debug\FontIconCreatorDesigner.exe
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\bin\Debug\FontIconCreatorDesigner.pdb
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\obj\Debug\FontIconCreatorDesigner.csproj.AssemblyReference.cache
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\obj\Debug\FontIconCreatorDesigner.Form1.resources
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\obj\Debug\FontIconCreatorDesigner.Properties.Resources.resources
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\obj\Debug\FontIconCreatorDesigner.csproj.GenerateResource.cache
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\obj\Debug\FontIconCreatorDesigner.csproj.CoreCompileInputs.cache
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\obj\Debug\FontIconCreatorDesigner.exe
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\obj\Debug\FontIconCreatorDesigner.pdb
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\bin\Debug\System.dll
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\bin\Debug\System.xml
+d:\1-Works\Gemini-1\FontIconCreatorDesigner\FontIconCreatorDesigner\obj\Debug\FontIcon.950E9812.Up2Date
