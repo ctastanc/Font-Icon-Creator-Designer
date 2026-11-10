@@ -11,27 +11,20 @@ For a font:
 ```cpp
 LCD_GUI.h
 ------------
-
 #include <font19.h>
 
-`lcd.PrintFont(font19,"I$abcdefghijklmnoprqstuvwxyz", CENTER, 156, 4, GREEN,BLUE,1);`
+lcd.PrintFont(font19,"I$abcdefghijklmnoprqstuvwxyz", CENTER, 156, 4, GREEN,BLUE,1);
 ```
 
 For an icon:
 ```cpp
 LCD_GUI.h
 ------------
-
 #include <icon_save.h>
 
-`lcd.DrawIcon(icon_save,50,50,RED);`
+lcd.DrawIcon(icon_save,50,50,RED);
 ```
 =======
-Simply copy the font file into the library directory and include it in `LCD_GUI.h`. You can then use it with the following lines:
-For a font:
-`lcd.PrintFont(font19,"I$abcdefghijklmnoprqstuvwxyz", CENTER, 156, 4, GREEN,BLUE,1);`
-For an icon:
-`lcd.DrawIcon(icon_save,50,50,RED);`
 
 
 <img width="1237" height="990" alt="dark" src="https://github.com/user-attachments/assets/41c8208b-016c-430d-9ec0-7909b4655acd" />
