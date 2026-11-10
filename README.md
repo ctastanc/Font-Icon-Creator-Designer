@@ -12,18 +12,22 @@ Simply copy the font or/and icon file into the library directory and include it 
 For a font:
 ```cpp
 LCD_GUI.h
-------------
-#include <font19.h>
 
+#include <font19.h>
+```
+
+```cpp
 lcd.PrintFont(font19,"I$abcdefghijklmnoprqstuvwxyz", CENTER, 156, 4, GREEN, BLUE, 1);
 ```
 
 For an icon:
 ```cpp
 LCD_GUI.h
-------------
-#include <icon_save.h>
 
+#include <icon_save.h>
+```
+
+```cpp
 lcd.DrawIcon(icon_save, 50, 50, RED);
 ```
 
