@@ -28,6 +28,7 @@ lcd.DrawIcon(icon_save, 50, 50, RED);
 You can also create .ic files from any image file, which you can use as icons or dot matrix images, 
 and draw them on the LCD using the "lcd.DrawIcon" method.
 
+---
 
 <img width="1237" height="990" alt="dark" src="https://github.com/user-attachments/assets/41c8208b-016c-430d-9ec0-7909b4655acd" />
 
