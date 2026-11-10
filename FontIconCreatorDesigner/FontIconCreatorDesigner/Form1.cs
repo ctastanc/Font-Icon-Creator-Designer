@@ -285,7 +285,6 @@ namespace FontIconCreatorDesigner
                 cbCharEdit.BackColor = Color.DodgerBlue;
                 cbCharEdit.ForeColor = Color.White;
                 txtFontIconName.Enabled = true;
-                //txtFontIconName.BackColor = SystemColors.GradientInactiveCaption;
             }
             else
             {
