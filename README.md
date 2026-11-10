@@ -33,3 +33,12 @@ and draw them on the LCD using the "lcd.DrawIcon" method.
 
 <img width="1230" height="990" alt="light" src="https://github.com/user-attachments/assets/57539111-2d26-4a22-b2a8-386941d72b7e" />
 
+---
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com).
+
+---
+
+## 📜 License
+This project is [MIT](LICENSE) licensed.
