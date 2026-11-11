@@ -143,7 +143,7 @@ namespace FontIconCreatorDesigner
             rtxDataMonitor.SetBounds(rtxDataMonitor.Left, targetTop, rtxDataMonitor.Width, targetHeight);
         }
 
-        /// Font Modu ile Tekil İkon Modu arasındaki geçişi yönetir.
+        /// Font Modu ile İkon Modu arasındaki geçişi yönetir.
         private void ApplyMode(bool mode)
         {
             CommitSelection();
@@ -186,7 +186,6 @@ namespace FontIconCreatorDesigner
                     }
                     catch { }
                 }
-
                 SyncIconControlsFromModel();
                 selectedChar = 0;
                 EnsureIconMatrixCapacity(iconRowCount, iconColCount);

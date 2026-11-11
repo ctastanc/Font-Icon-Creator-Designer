@@ -31,7 +31,7 @@ namespace FontIconCreatorDesigner
                         rbFontMode.Checked = true;
                         ApplyMode(FONT_MODE);
                     }
-                    LoadFontHeader(fileName);
+                    LoadFontFile(fileName);
                 }
                 else
                 {
@@ -45,20 +45,18 @@ namespace FontIconCreatorDesigner
             }
         }
 
-        private void LoadFontHeader(string filePath)
+        private void LoadFontFile(string filePath)
         {
             try
             {
                 FontModel parsed = FontHeaderManager.ParseFontFile(filePath);
                 LoadFontFromModel(parsed, filePath);
                 tlpGrid.Refresh();
-                // Explicitly collect generation 2 to keep memory low after loading a file
-                GC.Collect(2, GCCollectionMode.Optimized);
+                GC.Collect(2, GCCollectionMode.Optimized); // Explicitly collect generation 2 to keep memory low after loading a file
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while loading the font file: " + ex.Message,
-                    "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error occurred while loading the font file: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -519,13 +517,12 @@ namespace FontIconCreatorDesigner
                     rbFontMode.Checked = true;
                     ApplyMode(FONT_MODE);
                 }
-                LoadFontHeader(savedPath); // 4. Hazırlanan dosyayı yükle ve çalışmaya hazır hale getir
+                LoadFontFile(savedPath); // 4. Hazırlanan dosyayı yükle ve çalışmaya hazır hale getir
                 UpdateCodePreview();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, "An error occurred while converting the system font:\n" + ex.Message,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, "An error occurred while converting the system font:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -556,8 +553,7 @@ namespace FontIconCreatorDesigner
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, "An error occurred while converting the image:\n" + ex.Message,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, "An error occurred while converting the image:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -595,8 +591,7 @@ namespace FontIconCreatorDesigner
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while loading the icon file:\n" + ex.Message,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error occurred while loading the icon file:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion

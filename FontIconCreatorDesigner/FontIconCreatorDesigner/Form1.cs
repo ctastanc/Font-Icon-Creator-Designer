@@ -284,6 +284,7 @@ namespace FontIconCreatorDesigner
                 cbCharEdit.Text = "Edit ON ";
                 cbCharEdit.BackColor = Color.DodgerBlue;
                 cbCharEdit.ForeColor = Color.White;
+                lblFontName.Enabled = true;
                 txtFontIconName.Enabled = true;
             }
             else
@@ -291,6 +292,7 @@ namespace FontIconCreatorDesigner
                 cbCharEdit.Text = "Edit OFF";
                 cbCharEdit.UseVisualStyleBackColor = true;
                 cbCharEdit.ForeColor = Color.Black;
+                lblFontName.Enabled = false;
                 txtFontIconName.Enabled = false;
                 if (isSelectMoveMode) DisableSelectMoveMode();
             }
@@ -346,11 +348,9 @@ namespace FontIconCreatorDesigner
             FillArray(selectedChar);
             UpdateEditorView(0);
         }
-
         #endregion
 
         #region Matrix & String Conversion Helpers
-
         public void FillArray(int CharIndex) => FillMatrix(CharIndex, selectedColor);
 
         private void FillMatrix(int charIndex, Color color)
@@ -389,7 +389,6 @@ namespace FontIconCreatorDesigner
                 for (int r = 0; r < newH; r++)
                     for (int c = 0; c < newW; c++)
                         newMat[0, r, c] = (r < curH && c < curW) ? iconMatrix[0, r, c] : Color.White;
-
                 iconMatrix = newMat;
                 if (!isFontMode) commonMatrix = iconMatrix;
             }
@@ -436,8 +435,7 @@ namespace FontIconCreatorDesigner
                 {
                     curMat[r, c] = (sourceMatrix != null && charIdx >= 0 && charIdx < sourceMatrix.GetLength(0) &&
                                     r < sourceMatrix.GetLength(1) && c < sourceMatrix.GetLength(2))
-                        ? sourceMatrix[charIdx, r, c]
-                        : Color.White;
+                        ? sourceMatrix[charIdx, r, c] : Color.White;
                 }
             }
             return IconHeaderManager.GenerateIconFile(identifier, curMat, h, w, format);

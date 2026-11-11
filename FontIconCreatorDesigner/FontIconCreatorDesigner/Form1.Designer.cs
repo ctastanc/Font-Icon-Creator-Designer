@@ -115,13 +115,13 @@ namespace FontIconCreatorDesigner
             // 
             this.tlpGrid.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tlpGrid.ColumnCount = 1;
-            this.tlpGrid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1353F));
+            this.tlpGrid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1354F));
             this.tlpGrid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpGrid.Location = new System.Drawing.Point(8, 7);
             this.tlpGrid.Name = "tlpGrid";
             this.tlpGrid.RowCount = 1;
-            this.tlpGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1282F));
-            this.tlpGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1282F));
+            this.tlpGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1283F));
+            this.tlpGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1283F));
             this.tlpGrid.Size = new System.Drawing.Size(221, 137);
             this.tlpGrid.TabIndex = 0;
             this.tlpGrid.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tlpGrid_CellPaint);
@@ -309,6 +309,7 @@ namespace FontIconCreatorDesigner
             // lblFontName
             // 
             this.lblFontName.AutoSize = true;
+            this.lblFontName.Enabled = false;
             this.lblFontName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblFontName.Location = new System.Drawing.Point(8, 133);
             this.lblFontName.Name = "lblFontName";
