@@ -21,6 +21,7 @@ lcd.PrintFont(font19,"I$abcdefghijklmnoprqstuvwxyz", CENTER, 156, 4, GREEN, BLUE
 ```
 
 For an icon:
+Rename `icon_save.ic` to `icon_save.h`, copy it to the library directory, and include it in `LCD_GUI.h`.
 ```cpp
 LCD_GUI.h
 
